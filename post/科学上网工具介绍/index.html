@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>科学上网工具介绍 | Seafun</title>
+<meta name="description" content="Seafun的 自言自语">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zhangzhuqian.github.io//favicon.ico?v=1560599838190">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://zhangzhuqian.github.io//styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zhangzhuqian.github.io/">
+        <img src="https://zhangzhuqian.github.io//images/avatar.png?v=1560599838190" class="site-logo">
+        <h1 class="site-title">Seafun</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      Seafun的 自言自语
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zhangzhuqian.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">科学上网工具介绍</h2>
+            <div class="post-date">2017-04-09</div>
+            
+            <div class="post-content">
+              <p>​	上篇为大家大致介绍了科学上网的方式，这篇跟着为大家介绍科学上网的工具以及怎样获取代理服务</p>
+<h2 id="科学上网之工具篇">科学上网之工具篇</h2>
+<p>​	由于国人的科学上网需求是个刚性需求，所以围绕着科学上网，国人发明了不少工具，由于PAC和VPN是系统自带，所以为大家介绍的就是支持SS/SSR服务的工具，接下来依次为大家分系统介绍这些工具以及使用方法</p>
+<h3 id="ios">iOS</h3>
+<p>​	苹果在iOS9上开放了NE（Network Extension）权限，使iPhone得以在不越狱的情况下实现科学上网功能，因此各种工具遍地开花</p>
+<h4 id="surge">Surge</h4>
+<p>​	Surge可以说是在科学上网领域最为大名鼎鼎的工具了。其稳定性使其一时风头无两，但是其当下高达328的售价，也不适合一般人下手，Surge在最开始就定义自己是网络调试工具，如果大家只是冲着科学上网的话，建议大家可以寻找其他的工具。</p>
+<p>使用方法：</p>
+<ol>
+<li>
+<p>设置规则：直接通过url导入配置文件（.conf），前人造的轮子很多，大家可以自行搜索</p>
+</li>
+<li>
+<p>设置代理服务器：在ss站基本上会有Surge的支持，可以直接通过链接下载导入</p>
+</li>
+<li>
+<p>在此也找到了网上的新手设置指南供大家参考。<a href="https://medium.com/@scomper/surge-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6-a1533c10e80b">Surge新手设置指南</a></p>
+</li>
+</ol>
+<h4 id="shadowrocket小火箭">ShadowRocket（小火箭）</h4>
+<p>​	小火箭可以称的上是平价的翻墙工具了（售价18元），在作者升级为奶爸之后，对原先停更的APP进行了打鸡血一般的升级迭代，目前其功能已经基本完善,并且完整支持SSR服务，在我目前的使用中，其已经满足我的需求（长时间使用不掉线），所以小火箭目前是我的主力科学上网应用。</p>
+<p>使用方法：</p>
+<ol>
+<li>获取ss地址：
+<ol>
+<li>二维码形式</li>
+<li>代理服务器地址信息</li>
+<li>以ssr://开头的链接地址，可一次性导入多个代理服务器地址</li>
+</ol>
+</li>
+<li>导入ss地址
+<ol>
+<li>扫描二维码</li>
+<li>新增文本</li>
+<li>在safari中打开该链接，会自动跳转至小火箭，并新增节点</li>
+</ol>
+</li>
+<li>设置全局路由为配置
+<ol>
+<li>配置：即设置那些网站访问网络需要经过代理服务器</li>
+<li>小火箭作者提供了默认的配置文件，其可以满足基本的需求</li>
+<li>配置文件也可以在github上寻找</li>
+</ol>
+</li>
+<li>一键开启，科学上网</li>
+</ol>
+<h4 id="wingy">Wingy</h4>
+<p>​	科学上网应用虽然在iOS平台上遍地开花，但是均是付费应用，原因一部分是因为开发者大部分是独立开发者，其次是因为政策原因，免费的话会引起官方的注意。然而Wingy的出现打破了这个局面，Wingy也是我推荐给不需要长时间挂着科学上网服务的朋友的翻墙工具，免费且满足基本需求</p>
+<p>使用方法：</p>
+<p>​	基本方法和小火箭一致，在此不再赘述</p>
+<h3 id="android">Android</h3>
+<p>​	Android为人所称道的一点就是开放性,所以在Android上的科学上网工具很多,但是因为我不是一个Android党，所以对于Android的科学上网的APP的了解就仅限于ss站的推荐：ssr. 其已经可以满足国人科学上网的大部分需求了</p>
+<h4 id="ssr-android">SSR-android</h4>
+<p>使用方法:</p>
+<ol>
+<li>扫描二维码/批量导入/手动录入代理服务器节点信息</li>
+<li>选择节点</li>
+<li>设置路由为绕过大陆</li>
+<li>开启服务</li>
+<li>Bingo</li>
+</ol>
+<p>​下载地址：<a href="https://github.com/shadowsocksr/shadowsocksr-android/releases">点击下载</a></p>
+<h3 id="mac">Mac</h3>
+<p>​	Mac上的科学上网工具其实很多，诸如Surge for Mac，ShadowsocksX-NG-R8,ShadowsocksX-R.而我对它的要求最重要的就是保证功能的同时尽量不影响到到用户,以下推荐的两款均做到了这一点</p>
+<h4 id="shadowsocksx-ng-r8">ShadowsocksX-NG-R8</h4>
+<p>​	支持通过导入服务器配置文件一键导入多个节点,支持的分流方式包括PAC,域名白名单,IP白名单,开启后,仅在通知栏显示图标,对用户使用影响很小</p>
+<p>使用方法</p>
+<ol>
+<li>
+<p>扫描二维码/批量导入/手动录入代理服务器节点信息</p>
+</li>
+<li>
+<p>更新gfwlist文件</p>
+</li>
+<li>
+<p>选择节点</p>
+</li>
+<li>
+<p>开启服务</p>
+</li>
+<li>
+<p>Bingo！</p>
+<p>下载地址：<a href="https://github.com/shadowsocksr/ShadowsocksX-NG/releases">点击下载</a></p>
+</li>
+</ol>
+<h4 id="shadowsocksx-r">ShadowsocksX-R</h4>
+<p>​	使用方法同上</p>
+<p>​	下载地址：<a href="https://github.com/yichengchen/ShadowsocksX-R/releases">点击下载</a></p>
+<h4 id="proxifier">Proxifier</h4>
+<p>​	解决问题：在已经有ss代理的情况下，某些app不能翻墙（eg：Dropbox）</p>
+<p>​	作用：支持根据应用分流,强制应用经过翻墙服务访问网络</p>
+<p>使用示例：</p>
+<img src="https://ooo.0o0.ooo/2017/04/10/58ea6402db410.png"  width = "300" height = "300" />
+<h3 id="windows">Windows</h3>
+<h4 id="ssr-win">ssr-Win</h4>
+<p>​	使用方法同Mac-ShadowsocksX-NG-R8,在此不多赘述</p>
+<h2 id="科学上网之代理服务篇">科学上网之代理服务篇</h2>
+<p>​	说了这么多,那么去哪儿找这些代理服务器呢,不归为大家列举了一些获取代理服务的方式</p>
+<h3 id="ss站">SS站</h3>
+<p>​	在SS服务大行其道的当下,国人也开始做起了SS站的生意,SS站分为免费和付费,其中付费SS站,用户一般需要购买流量,购买ss服务时间等方式来获取代理服务,而免费SS站一般可以免费使用,但是因为人数多会导致节点质量不稳定,或者是站长采用邀请码制度控制质量,所以免费SS站是可遇不可求,还有一些是捐赠制度,依靠用户的自觉捐款来保证站点的正常运行</p>
+<h3 id="付费app中内嵌代理服务">付费APP中内嵌代理服务</h3>
+<p>​	在iOS APP中有一些付费应用,是自带代理服务,用户通过订阅制付款,来获取代理服务</p>
+<h3 id="自行搭建vpnss服务">自行搭建VPN/SS服务</h3>
+<p>​	这个是推荐有一定技术基础的小伙伴来做,可选的服务器提供商有搬瓦工，Vultr，阿里云等等,搭建好了,可以让自己的基友共同使用,也可以给女神用哦,因为一人使用一条线路还是有浪费的,所以建议大家可以合租线路,共同分担,在网上寻找到了搭建教程,希望可以帮到大家.</p>
+<p><strong>搭建教程:</strong><a href="https://vvfgv.com/2017/01/26/howtobreakwa11/">用vps搭建VPN和SS科学上网服务</a></p>
+<h2 id="科学上网衍生的技术">科学上网衍生的技术</h2>
+<h3 id="中转">中转</h3>
+<p>​	利用国内节点作为中转节点,使得国内访问国外的出口速度提升</p>
+<h3 id="分流">分流</h3>
+<p>​	在科学上网的途中,并非所有的网站都是需要经过代理服务器,所以利用分流来区分网站是否需要经过代理服务器访问,主流的分流方式有:PAC,域名白名单,IP白名单.</p>
+<h2 id="参考链接">参考链接</h2>
+<p>​	大家可以在github上查看ssr项目的进展 <a href="https://github.com/breakwa11/shadowsocks-rss">点击查看</a></p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://zhangzhuqian.github.io//tag/ke-xue-shang-wang" class="tag">
+                    科学上网
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zhangzhuqian.github.io//post/科学上网简易科普">
+                  <h3 class="post-title">
+                    科学上网简易科普
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>

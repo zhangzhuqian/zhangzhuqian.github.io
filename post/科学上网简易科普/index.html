@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>科学上网简易科普 | Seafun</title>
+<meta name="description" content="Seafun的 自言自语">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zhangzhuqian.github.io//favicon.ico?v=1560599838190">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://zhangzhuqian.github.io//styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zhangzhuqian.github.io/">
+        <img src="https://zhangzhuqian.github.io//images/avatar.png?v=1560599838190" class="site-logo">
+        <h1 class="site-title">Seafun</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      Seafun的 自言自语
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zhangzhuqian.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">科学上网简易科普</h2>
+            <div class="post-date">2017-04-07</div>
+            
+            <div class="post-content">
+              <p>随着中国搭建GFW(不了解的请自行谷歌,嘿嘿),阻碍了互联网信息的流动，国外一些很棒的服务和网站(eg: Google,Dropbox)在国内都无法正常访问,于是翻墙越来越成为新时代国人上网的必备技能之一，今天就为大家梳理一下翻墙的前世今生</p>
+<h2 id="翻墙技术的演变">翻墙技术的演变</h2>
+<p>​	翻墙顾名思义就是翻越GFW，简单来说就是利用加密(让墙无法知道你访问的是什么内容),代理(以国外未被限制的网址访问这些GFW拦截的网站),伪装(网络流量的伪装)这些方式来访问被封的网站.</p>
+<p>翻墙的方式有哪些，接下来为大家依次介绍</p>
+<h3 id="pac文件代理自动配置">PAC文件(代理自动配置)</h3>
+<ul>
+<li>PAC文件翻墙是指通过PAC文件告知浏览器当前访问的网址是否需要进行代理来实现翻墙功能</li>
+<li>使用方法(直接利用PAC翻墙)
+<ul>
+<li>在WIFI设置中增加链接即可实现部分翻墙</li>
+<li>在iOS设置中增加描述性文件</li>
+</ul>
+</li>
+<li>优点：方便快捷,几乎不需要了解其他操作</li>
+<li>缺点：无法使某些APP翻墙（eg：facebook，telegarm），实用性不高</li>
+<li>使用场景:利用代理服务器进行翻墙,而利用PAC自动设置某些网站过代理服务器,目前最知名的pac当属gfwlist了</li>
+</ul>
+<h3 id="vpn虚拟专用网络">VPN(虚拟专用网络)</h3>
+<ul>
+<li>使用方法
+<ol>
+<li>VPN设置中设置服务器和密码,选择支持方式(PPTP&amp;L2TP)</li>
+<li>开启VPN,即可实现翻墙功能</li>
+</ol>
+</li>
+<li>优点：
+<ul>
+<li>快速上手,便利性好,几乎所有设备,操作系统都提供VPN连接服务</li>
+<li>在系统自带的VPN中设置服务器节点即可开启代理</li>
+</ul>
+</li>
+<li>缺点：
+<ul>
+<li>不能方便的对IP进行分流,简单可理解为翻墙即为全翻</li>
+<li>不能方便的进行自动连接</li>
+<li>目前GFW加强了对VPN翻墙服务的封锁，所以你懂的</li>
+</ul>
+</li>
+</ul>
+<h3 id="shadowsocksss-推荐">shadowsocks(SS) {推荐}</h3>
+<ul>
+<li>由来：SS是最早由国人clowwindy发布在github上,虽然之后经历作者被喝茶,代码被删除(在 2015 年 8 月 22 日，Shadowsocks 原作者 Clowwindy 称受到了<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%A1%E6%9F%A5">中国政府的压力</a>，宣布停止维护此计划（项目）并移除其个人页面所存储的源代码),但是之后国人重新拾起shadowsocks,将其发扬光大以及延伸,成为国人目前的主流翻墙方式</li>
+<li>使用方法
+<ol>
+<li>下载ss应用(下篇介绍这些应用)</li>
+<li>输入代理服务器和密码</li>
+<li>选择基于gfwlist的pac(国内外自动分流)</li>
+<li>长期开启ss应用</li>
+<li>完成翻墙,之后完全不需要再管</li>
+</ol>
+</li>
+<li>优点:
+<ul>
+<li>轻量级socks代理</li>
+<li>平台支持广泛(iOS,Android,Win,Linux)</li>
+<li>抗干扰能力强(这是重点)</li>
+</ul>
+</li>
+<li>缺点:
+<ul>
+<li>需要搭配APP使用(缺点太小,可以忽略)</li>
+</ul>
+</li>
+</ul>
+<h3 id="ssr-推荐">SSR  {推荐}</h3>
+<ul>
+<li>SSR是在SS的基础上发展起来的(这是笔糊涂账,不展开),目前主力是由少女破娃酱团队进行维护</li>
+<li>使用方法:
+<ul>
+<li>同SS</li>
+</ul>
+</li>
+<li>优点:
+<ul>
+<li>相比SS增加了混淆功能,提升了GFW识别的成本(不能说完全杜绝)</li>
+</ul>
+</li>
+<li>缺点:
+<ul>
+<li>需要搭配指定的客户端使用才能使用到所有特性</li>
+</ul>
+</li>
+</ul>
+<h2 id="怎么翻墙">怎么翻墙</h2>
+<p>​	介绍了这么多翻墙方式,那么怎么翻墙呢</p>
+<ol>
+<li>寻找提供代理服务的网站,目前这样的网站很多,免费和付费均有</li>
+<li>选择合适的翻墙方式,根据网站提供的配置方式进行配置</li>
+<li>一键开启,即可冲浪在自由的互联网世界了</li>
+</ol>
+<h2 id="科学上网之后可以做什么">科学上网之后可以做什么</h2>
+<ul>
+<li>第一时间上谷歌全家桶:谷歌服务框架,谷歌搜索,谷歌日历,谷歌云服务...</li>
+<li>推特,脸书,ins,汤博乐,quara等等</li>
+<li>dropbox等云服务,在此只推荐dropbox,需要ss搭配proxifier使用</li>
+<li>telegram  联络工具,在中国没法聊的事情,大家都在telegram上聊</li>
+</ul>
+<h2 id="临时火花">临时火花:</h2>
+<p>​	在了解的过程中,其实更多的是对95后的钦佩,他们从小就开始接触网络,了解万里长城,科学上网,其中目前的主力破娃酱,主流的ss站模板都是95后来完成的,甚至有个正在高考的妹子,也在不遗余力的宣传怎样去建站翻墙,不过他们有个共同点,热爱二次元文化,难道真像知乎大V 轮子哥说的,想要成为个优秀的程序猿,首先要穿女装</p>
+<h2 id="总结">总结</h2>
+<p>​	对于国人来说,前人已经提供好了梯子,所以想要翻墙需要做的只是寻找代理服务器和选择翻墙方式</p>
+<hr>
+<h2 id="下篇简介"><a href="http://qianpm.com/posts/cj1awojzm002xeifyzroax6mr.html">下篇简介</a></h2>
+<p>​	承接上文,在各种翻墙方式中,PAC和VPN这两种翻墙方式基本上只需要系统的支持,所以我们主要为大家梳理的是支持SS/SSR服务的APP</p>
+<h3 id="ios">iOS :</h3>
+<p>​	苹果在iOS9上开放了NE权限,SS得以在不越狱的iOS上实现</p>
+<ul>
+<li>ShadowRocket 又名小火箭
+<ul>
+<li>优点
+<ul>
+<li>目前相对稳定</li>
+<li>支持SSR</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Surge SS领域最知名
+<ul>
+<li>优点:
+<ul>
+<li>老牌的翻墙应用</li>
+<li>品质值得信赖</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>目前只支持SS，使用SSR服务时,无法发挥其所有特性</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Wingy
+<ul>
+<li>优点
+<ul>
+<li>免费</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>暂时无法长期使用</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Potatso（土豆丝）
+<ul>
+<li>曾经开放源代码</li>
+<li>当前已经上线potatso2</li>
+</ul>
+</li>
+<li>vpnmaster pro
+<ul>
+<li>一键连接</li>
+<li>速度无法保证</li>
+</ul>
+</li>
+</ul>
+<h3 id="android">Android:</h3>
+<ul>
+<li>ssr-and
+<ul>
+<li>Android端翻墙工具</li>
+<li>支持SS/SSR</li>
+</ul>
+</li>
+</ul>
+<h3 id="mac">Mac</h3>
+<ul>
+<li>ShadowsocksX-NG-R8
+<ul>
+<li>支持SS/SSR</li>
+<li>使用方法
+<ol>
+<li>扫描二维码/批量导入/手动录入代理服务器节点信息</li>
+<li>更新gfwlist文件</li>
+<li>选择节点</li>
+<li>开启服务</li>
+<li>Bingo！</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Proxifier
+<ul>
+<li>解决问题：在已经有ss代理的情况下，某些app不能翻墙（eg：Dropbox）</li>
+<li>作用：强制设置某些app必须走代理</li>
+</ul>
+</li>
+</ul>
+<h3 id="windows">Windows</h3>
+<ul>
+<li>ssr-win</li>
+</ul>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://zhangzhuqian.github.io//tag/ke-xue-shang-wang" class="tag">
+                    科学上网
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zhangzhuqian.github.io//post/产品小报-科学上网类">
+                  <h3 class="post-title">
+                    产品小报-科学上网类
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
