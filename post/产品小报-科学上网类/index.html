@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>产品小报-科学上网类 | Seafun</title>
+<meta name="description" content="Seafun的 自言自语">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zhangzhuqian.github.io//favicon.ico?v=1560599379495">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://zhangzhuqian.github.io//styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zhangzhuqian.github.io/">
+        <img src="https://zhangzhuqian.github.io//images/avatar.png?v=1560599379495" class="site-logo">
+        <h1 class="site-title">Seafun</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      Seafun的 自言自语
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zhangzhuqian.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">产品小报-科学上网类</h2>
+            <div class="post-date">2017-04-06</div>
+            
+            <div class="post-content">
+              <h2 id="正文">正文</h2>
+<p>随着中国搭建GFW(不了解的请自行谷歌,嘿嘿),阻碍了互联网信息的流动，国外一些很棒的服务和网站(eg: Google,Dropbox)在国内都无法正常访问,于是翻墙越来越成为新时代国人上网的必备技能之一，小报君今天就为大家梳理一下翻墙的前世今生</p>
+<h3 id="cq-翻墙技术的演变-endcq">{% cq %} 翻墙技术的演变{% endcq %}</h3>
+<p>翻墙顾名思义就是翻越GFW，简单来说就是加密(让墙无法知道你访问的是什么内容),代理(以国外未被限制的网址访问这些GFW拦截的网站),伪装(网络流量的伪装).</p>
+<p>翻墙的方式有哪些，接下来请允许小报君为大家依次介绍</p>
+<ul>
+<li>PAC文件(代理自动配置)
+<ul>
+<li>PAC文件翻墙是指通过PAC文件告知浏览器当前访问的网址是否需要进行代理来实现翻墙功能</li>
+<li>使用方法(直接利用PAC翻墙)
+<ul>
+<li>在WIFI设置中增加链接即可实现部分翻墙</li>
+<li>在iOS设置中增加描述性文件</li>
+</ul>
+</li>
+<li>优点：方便快捷,几乎不需要了解其他操作</li>
+<li>缺点：无法使某些APP翻墙（eg：facebook，telegarm），实用性不高</li>
+<li>使用场景:利用代理服务器进行翻墙,而利用PAC自动设置某些网站过代理服务器,目前最知名的pac当属gfwlist了</li>
+</ul>
+</li>
+<li>VPN(虚拟专用网络)
+<ul>
+<li>使用方法
+<ul>
+<li>VPN设置中设置服务器和密码,选择支持方式(PPTP&amp;L2TP)</li>
+<li>开启VPN,即可实现翻墙功能</li>
+</ul>
+</li>
+<li>优点：
+<ul>
+<li>快速上手,便利性好,几乎所有设备,操作系统都提供VPN连接服务</li>
+<li>在系统自带的VPN中设置服务器节点即可开启代理</li>
+</ul>
+</li>
+<li>缺点：
+<ul>
+<li>不能方便的对IP进行分流,简单可理解为翻墙即为全翻</li>
+<li>不能方便的进行自动连接</li>
+<li>目前GFW加强了对VPN翻墙服务的封锁，所以你懂的</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>shadowsocks(SS) 推荐
+<ul>
+<li>由来：SS是最早由国人clowwindy发布在github上,虽然之后经历作者被喝茶,代码被删除,但是之后国人重新拾起shadowsocks,将其发扬光大以及延伸,成为国人目前的主流翻墙方式</li>
+<li>使用方法
+<ol>
+<li>下载ss应用(下篇介绍这些应用)</li>
+<li>输入代理服务器和密码</li>
+<li>选择基于gfwlist的pac(国内外自动分流)</li>
+<li>长期开启ss应用</li>
+<li>完成翻墙,之后完全不需要再管</li>
+</ol>
+</li>
+<li>优点:
+<ul>
+<li>轻量级socks代理,平台支持广泛(iOS,Android,Win,Linux),抗干扰能力强(这是重点)</li>
+</ul>
+</li>
+<li>缺点:需要搭配APP使用(缺点太小)</li>
+</ul>
+</li>
+<li>SSR 推荐
+<ul>
+<li>SSR是在SS的基础上发展起来的(这是笔糊涂账,不展开),目前主力是由少女破娃酱团队进行维护</li>
+<li>使用方法:
+<ul>
+<li>同SS</li>
+</ul>
+</li>
+<li>优点:相比SS增加了混淆功能,提升了GFW识别的成本(不能说完全杜绝)</li>
+<li>缺点:需要搭配指定的客户端使用才能使用到所有特性</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>
+<p>介绍了这么多翻墙方式,那么怎么翻墙呢</p>
+<ol>
+<li>寻找提供代理服务的网站,目前这样的网站很多,免费和付费均有(找不到窍门的可以问小报君)</li>
+<li>选择合适的翻墙方式,根据网站提供的配置方式进行配置</li>
+<li>一键开启,即可冲浪在自由的互联网世界了</li>
+</ol>
+<p>​对于国人来说,前人已经提供好了梯子,所以想要翻墙需要做的只是寻找代理服务器和选择翻墙方式,因为今天介绍的都是科学上网方式的演变,其实和产品关系不搭,不知道这样的产品小报能不能入各位大神的眼呢</p>
+</li>
+</ol>
+<h2 id="小报版本">小报版本</h2>
+<blockquote>
+<p>科学上网类</p>
+<p>随着中国搭建GFW(不了解的请自行谷歌,嘿嘿),阻碍了互联网信息的流动，国外一些很棒的服务和网站(eg: Google,Dropbox)在国内都无法正常访问,于是翻墙越来越成为新时代国人上网的必备技能之一，小报君今天就为大家梳理一下翻墙的前世今生。</p>
+<p>翻墙顾名思义就是翻越GFW,简单来说就是加密,代理,伪装等方式去看到墙外的世界。而翻墙的方式有哪些？</p>
+<p>☞PAC文件(代理自动配置)</p>
+<p>PAC文件翻墙是指通过PAC文件告知浏览器当前访问的网址是否需要进行代理浏览。</p>
+<p>优点：方便快捷,几乎不需要了解其他操作</p>
+<p>缺点：无法使某些需翻墙的APP（eg:facebook,telegram),实用性不高</p>
+<p>☞VPN(虚拟专用网络)</p>
+<p>众人皆知的“佛跳墙”。</p>
+<p>优点：快速上手,便利性好,几乎所有设备,操作系统都自带VPN连接服务</p>
+<p>缺点：不能方便的对IP进行分流,可理解为翻墙即全翻；不能方便的进行自动连接；而且目前GFW加强了对VPN翻墙服务的封锁，所以你懂的（手动哭笑）。</p>
+<p>☞shadowsocks(SS) 推荐</p>
+<p>SS是最早由国人clowwindy发布在github上,虽然经历作者被喝茶,代码被删除等风波,但是之后被国人重新拾起并将其发扬光大以,成为目前的主流翻墙方式。</p>
+<p>优点:轻量级socks代理,平台支持广泛(iOS,Android,Win,Linux),抗干扰能力强(这是重点)。</p>
+<p>缺点:需要搭配APP或指定客户端使用（这根本不算缺点嘛！所以强烈推荐）。</p>
+<p>☞SSR  推荐</p>
+<p>SSR是在SS的基础上发展起来的,目前主力是由少女破娃酱团队进行维护。</p>
+<p>优点:相比SS增加了混淆功能,提升了GFW识别的成本(不能说完全杜绝)。</p>
+<p>缺点:需要搭配指定的客户端使用才能使用到所有特性。</p>
+<p>对于国人来说,前人已经提供好了梯子,所以想要翻墙需要做的只是三步走：</p>
+<p>1、寻找代理服务器（找不到的来勾搭小报君哦）</p>
+<p>2、选择翻墙方式</p>
+<p>3、完成配置，一键翻墙</p>
+<p>相较以往今天的小报比较科普向，下期我们会带来各种翻墙工具的介绍以及使用方法，敬请期待！</p>
+</blockquote>
+<h1 id="科学上网工具代理服务器">科学上网(工具,代理服务器)</h1>
+<h2 id="正文-2">正文</h2>
+<p>上篇为大家大致介绍了科学上网的方式，这篇跟着为大家介绍科学上网的工具以及怎样获取代理服务</p>
+<h2 id="cq-科学上网工具介绍-endcq">{% cq %} 科学上网工具介绍{% endcq %}</h2>
+<p>​	由于国人的科学上网需求是个刚性需求，所以围绕着科学上网，国人发明了不少工具，由于PAC和VPN是系统自带，所以为大家介绍的就是支持SS/SSR服务的工具，接下来依次为大家分系统介绍这些工具以及使用方法</p>
+<h3 id="ios">iOS</h3>
+<p>​	苹果在iOS9上开放了NE（Network Extension）权限，使iPhone得以在不越狱的情况下实现科学上网功能，因此各种工具遍地开花</p>
+<h4 id="surge">Surge</h4>
+<p>​	Surge可以说是在科学上网领域最为大名鼎鼎的工具了。其稳定性使其一时风头无两，但是其当下高达328的售价，也不适合一般人下手，Surge在最开始就定义自己是网络调试工具，如果大家只是冲着科学上网的话，建议大家可以寻找其他的工具。</p>
+<p>使用方法：</p>
+<ol>
+<li>设置规则：直接通过url导入配置文件（.conf），前人造的轮子很多，大家可以自行搜索</li>
+<li>设置代理服务器：在ss站基本上会有Surge的支持，可以直接通过链接下载导入</li>
+<li>在此也找到了网上的新手设置指南供大家参考。<a href="https://medium.com/@scomper/surge-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6-a1533c10e80b">Surge新手设置指南</a></li>
+</ol>
+<h4 id="shadowrocket小火箭">ShadowRocket（小火箭）</h4>
+<p>​	小火箭可以称的上是平价的翻墙工具了（售价18元），在作者升级为奶爸之后，对原先停更的APP进行了打鸡血一般的升级迭代，目前其功能已经基本完善,并且完整支持SSR服务，在我目前的使用中，其已经满足我的需求（长时间使用不掉线），所以小火箭目前是我的主力科学上网应用。</p>
+<p>使用方法：</p>
+<ol>
+<li>获取SS代理服务器地址
+<ul>
+<li>二维码形式</li>
+<li>代理服务器地址信息</li>
+<li>以ssr://开头的链接地址，可一次性导入多个代理服务器地址</li>
+</ul>
+</li>
+<li>导入SS代理服务器地址
+<ul>
+<li>扫描二维码</li>
+<li>新增文本</li>
+<li>在safari中打开该链接，会自动跳转至小火箭，并新增节点</li>
+</ul>
+</li>
+<li>设置全局路由为配置
+<ul>
+<li>配置：即设置那些网站访问网络需要经过代理服务器</li>
+<li>小火箭作者提供了默认的配置文件，其可以满足基本的需求</li>
+<li>配置文件也可以在github上寻找</li>
+</ul>
+</li>
+<li>一键开启，科学上网</li>
+</ol>
+<h4 id="wingy">Wingy</h4>
+<p>​	科学上网应用虽然在iOS平台上遍地开花，但是均是付费应用，原因一部分是因为开发者大部分是独立开发者，其次是因为政策原因，免费的话会引起官方的注意。然而Wingy的出现打破了这个局面，Wingy也是我推荐给不需要长时间挂着科学上网服务的朋友的翻墙工具，免费且满足基本需求</p>
+<p>使用方法：</p>
+<p>​	基本方法和小火箭一致，在此不再赘述</p>
+<h3 id="android">Android</h3>
+<p>​	Android为人所称道的一点就是开放性,所以在Android上的科学上网工具很多,但是因为我不是一个Android党，所以对于Android的科学上网的APP的了解就仅限于ss站的推荐：ssr. 其已经可以满足国人科学上网的大部分需求了</p>
+<h4 id="ssr-android">SSR-android</h4>
+<p>使用方法:</p>
+<ol>
+<li>扫描二维码/批量导入/手动录入代理服务器节点信息</li>
+<li>选择节点</li>
+<li>设置路由为绕过大陆</li>
+<li>开启服务</li>
+<li>Bingo</li>
+</ol>
+<p>​下载地址：<a href="https://github.com/shadowsocksr/shadowsocksr-android/releases">点击下载</a></p>
+<h3 id="mac">Mac</h3>
+<p>​	Mac上的科学上网工具其实很多，诸如Surge for Mac，ShadowsocksX-NG-R8,ShadowsocksX-R.而我对它的要求最重要的就是保证功能的同时尽量不影响到到用户,以下推荐的两款均做到了这一点</p>
+<h4 id="shadowsocksx-ng-r8">ShadowsocksX-NG-R8</h4>
+<p>​	支持通过导入服务器配置文件一键导入多个节点,支持的分流方式包括PAC,域名白名单,IP白名单,开启后,仅在通知栏显示图标,对用户使用影响很小</p>
+<p>使用方法</p>
+<ol>
+<li>
+<p>扫描二维码/批量导入/手动录入代理服务器节点信息</p>
+</li>
+<li>
+<p>更新gfwlist文件</p>
+</li>
+<li>
+<p>选择节点</p>
+</li>
+<li>
+<p>开启服务</p>
+</li>
+<li>
+<p>Bingo！</p>
+<p>下载地址：<a href="https://github.com/shadowsocksr/ShadowsocksX-NG/releases">点击下载</a></p>
+</li>
+</ol>
+<h4 id="shadowsocksx-r">ShadowsocksX-R</h4>
+<p>​	使用方法同上</p>
+<p>​	下载地址：<a href="https://github.com/yichengchen/ShadowsocksX-R/releases">点击下载</a></p>
+<h4 id="proxifier">Proxifier</h4>
+<p>​	解决问题：在已经有ss代理的情况下，某些app不能翻墙（eg：Dropbox）</p>
+<p>​	作用：支持根据应用分流,强制应用经过翻墙服务访问网络</p>
+<p>​	使用方法:</p>
+<p>​		设置规则,添加需要强制翻墙的APP,设置PROXY(127.0.0.1,端口可查看翻墙工具的HTTP代理端口),即可强制APP翻墙</p>
+<h3 id="windows">Windows</h3>
+<h4 id="ssr-win">ssr-Win</h4>
+<p>​	使用方法同Mac-ShadowsocksX-NG-R8,在此不多赘述</p>
+<h2 id="cq-怎样获取代理服务-endcq">{% cq %} 怎样获取代理服务{% endcq %}</h2>
+<p>​	说了这么多,那么去哪儿找这些代理服务器呢,不归为大家列举了一些获取代理服务的方式</p>
+<h3 id="ss站">SS站</h3>
+<p>​	在SS服务大行其道的当下,国人也开始做起了SS站的生意,SS站分为免费和付费,其中付费SS站,用户一般需要购买流量,购买ss服务时间等方式来获取代理服务,而免费SS站一般可以免费使用,但是因为人数多会导致节点质量不稳定,或者是站长采用邀请码制度控制质量,所以免费SS站是可遇不可求,还有一些是捐赠制度,依靠用户的自觉捐款来保证站点的正常运行</p>
+<p>​	如果你找不到合适的SS站，可以找我推荐！</p>
+<h3 id="付费app中内嵌代理服务">付费APP中内嵌代理服务</h3>
+<p>​	在iOS APP中有一些付费应用,是自带代理服务,用户通过订阅制付款,来获取代理服务</p>
+<h3 id="自行搭建vpnss服务">自行搭建VPN/SS服务</h3>
+<p>​	这个是推荐有一定技术基础的小伙伴来做,可选的服务器提供商有搬瓦工，Vultr，阿里云等等,搭建好了,可以让自己的基友共同使用,也可以给女神用哦,因为一人使用一条线路还是有浪费的,所以建议大家可以合租线路,共同分担,在网上寻找到了搭建教程,希望可以帮到大家.</p>
+<p><strong>搭建教程:</strong><a href="https://vvfgv.com/2017/01/26/howtobreakwa11/">用vps搭建VPN和SS科学上网服务</a></p>
+<h2 id="cq-科学上网衍生的技术-endcq">{% cq %} 科学上网衍生的技术{% endcq %}</h2>
+<h3 id="中转">中转</h3>
+<p>​	利用国内节点作为中转节点,使得国内访问国外的出口速度提升</p>
+<h3 id="分流">分流</h3>
+<p>​	在科学上网的途中,并非所有的网站都是需要经过代理服务器,所以利用分流来区分网站是否需要经过代理服务器访问,主流的分流方式有:PAC,域名白名单,IP白名单.</p>
+<h2 id="小报版本-2">小报版本</h2>
+<blockquote>
+<p>◆【科学上网工具介绍】</p>
+<p>今天为大家分系统介绍这些支持SS的科学上网工具以及使用方法</p>
+<p>☞iOS 工具众多,挑选几个典型的为大家介绍</p>
+<p>☞Surge</p>
+<p>优点:稳定,耐用,支持网络调试</p>
+<p>缺点:费用高昂(328)</p>
+<p>☞ShadowRocket（小火箭）</p>
+<p>优点:稳定,好用,支持SSR,平价(18)</p>
+<p>☞Wingy</p>
+<p>优点:免费且满足基本需求</p>
+<p>缺点:无法中长期不中断使用</p>
+<p>☞Android因为本身的开放性,工具也很多</p>
+<p>☞SSR-android</p>
+<p>☞Mac</p>
+<p>选择标准:保证功能的同时尽量不影响到到用户</p>
+<p>☞ShadowsocksX-NG-R8</p>
+<p>支持通过导入服务器配置文件一键导入多个节点,支持的分流方式包括PAC,域名白名单,IP白名单,开启后,仅在通知栏显示图标,对用户使用影响很小</p>
+<p>☞ShadowsocksX-R</p>
+<p>使用方法同ShadowsocksX-NG-R8</p>
+<p>☞Proxifier</p>
+<p>解决问题：在已经有ss代理的情况下，某些app不能翻墙（eg：Dropbox）</p>
+<p>作用：支持根据应用分流,强制应用经过翻墙服务访问网络</p>
+<p>☞Windows</p>
+<p>☞ssr-Win</p>
+<p>使用方法同ShadowsocksX-NG-R8</p>
+<p>获取代理服务</p>
+<p>☞SS站(推荐)</p>
+<p>​	付费：用户需要购买流量，购买ss服务时间等方式来获取代理服务</p>
+<p>​	免费：免费使用，但是节点质量不保证</p>
+<p>☞付费APP中内嵌代理服务</p>
+<p>​        在iOS APP中有一些付费应用,是自带代理服务,用户通过订阅制付款,来获取代理服务</p>
+<p>☞自行搭建VPN/SS服务</p>
+<p>​        推荐有一定技术基础的小伙伴来做,可选的服务提供商有搬瓦工，Vultr，阿里云等等,建议大家可以合租线路,共同分担费用,在网上找到了搭建教程</p>
+<p>所有使用方法及下载地址见越蹭越热公众号</p>
+</blockquote>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://zhangzhuqian.github.io//tag/ke-xue-shang-wang" class="tag">
+                    科学上网
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zhangzhuqian.github.io//post/从生意角度聊产品">
+                  <h3 class="post-title">
+                    从生意角度聊产品——蔡蔡 20170406
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
