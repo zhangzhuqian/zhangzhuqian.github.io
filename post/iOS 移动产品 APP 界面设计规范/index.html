@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>iOS 移动产品 APP 界面设计规范 | Seafun</title>
+<meta name="description" content="Seafun的 自言自语">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zhangzhuqian.github.io//favicon.ico?v=1560599787100">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://zhangzhuqian.github.io//styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zhangzhuqian.github.io/">
+        <img src="https://zhangzhuqian.github.io//images/avatar.png?v=1560599787100" class="site-logo">
+        <h1 class="site-title">Seafun</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      Seafun的 自言自语
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zhangzhuqian.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">iOS 移动产品 APP 界面设计规范</h2>
+            <div class="post-date">2017-04-19</div>
+            
+            <div class="post-content">
+              <h2 id="一概述">一．概述</h2>
+<p>**编写目的：**编写 iOS 移动产品设计规范（以下简称 “设计规范”）主要是为了规范化公司移动产品设计，将常用控件的设计标准化，使其更符合 iOS 平台的特性，降低用户的学习成本。</p>
+<p>此外，也能让产品、UI、开发人员在产品细节上达成共识，减少沟通成本，提升开发效率。</p>
+<p>**主要面向对象：**产品人员、UI 设计师、交互设计师、开发人员。</p>
+<p>**适用范围：**iOS 平台上所有 APP 与大多数移动版网页。</p>
+<h2 id="二设计原则">二．设计原则</h2>
+<h4 id="21-设计">2.1 设计</h4>
+<p><strong>依从</strong>**：**用户界面（UI）应当有助于用户理解内容并与之互动，而非对抗。</p>
+<p><strong>清晰</strong>**：**文字在每种字号下都易于阅读，图标表意准确清晰，装饰也恰到其度，并以对功能的无比关注驱动设计。</p>
+<p><strong>纵深</strong>**：**视觉上的分层界面和逼真的动作使其更赋活力，提升了用户的愉悦和理解。</p>
+<h4 id="22-交互">2.2 交互</h4>
+<p>**可控：**所有交互应该给予用户安全感，让人感觉程序可操纵性。</p>
+<p>**适时反馈：**永远在合适的时间出现，惊喜而非 “惊吓”。</p>
+<p>**有意义：**交互是为了引导而存在，尽量避免无意义的炫技。</p>
+<h2 id="三格式">三．格式</h2>
+<h4 id="31-标准单位">3.1 标准单位</h4>
+<p><strong>3.1.1Pixels(像素)</strong></p>
+<p>Pixels 是数字显示屏上我们可控制的最小物理元素，在一个特定屏幕尺寸中可以有多个像素。</p>
+<p><strong>3.1.2Points（点）</strong></p>
+<p>Points 用以衡量分辨率。根据屏幕的像素密度，一个 point 可以包含多个像素（比如在常规的 Retina 屏上，1pt 包含 2 x 2 的像素）。</p>
+<h4 id="32-字体的选择">3.2 字体的选择</h4>
+<p>iOS 版本中默认字体都是** Helvetica Neue**。建议中文字体 Mac 下用的是** Heiti SC(黑体 - 简)<strong>。Windows 下则为</strong>华文细黑**。设计以 iPhone6 的尺寸进行设计，所以所有的字号都要使用双号数字。</p>
+<p><img src="http://ww1.sinaimg.cn/large/006tKfTcly1ff9ap7qxn7j30eu08eagf.jpg" alt="img"></p>
+<h4 id="33-字体大小建议大小">3.3 字体大小（建议大小）</h4>
+<p>确保一个自定义字体在不同尺寸下的所有类型都具备可读性。实现这一效果的方法之一是效仿在不同的文本尺寸下 iOS 系统呈现字体样式的一些方法。例如（以 iPhone6 及以下尺寸为例）：</p>
+<p>1）文本永远都不应该小于 22px，内容样式使用 34px 的字号作为最大尺寸的默认文本尺寸设置。（<strong>个别情况</strong>：文字最小使用 20px 的，如标签栏图标的文字为 20px; 文字最大使用 34px 及以上的，如弹窗按钮文字为 36px）</p>
+<p>2）为了区分标题与内容样式，标题样式使用更重的值，可以是颜色或字体大小区分。</p>
+<p>3）导航栏的文本使用相同的字号，值为 34px。</p>
+<hr>
+<p><img src="http://ww1.sinaimg.cn/large/006tKfTcly1ff9ap85h2rj30ib06aglg.jpg" alt="img"></p>
+<h4 id="34-屏幕与显示">3.4 屏幕与显示</h4>
+<p><strong>3.4.1 图像分辨率（ppi）</strong></p>
+<p>PixelsPer Inch 所表示的是每英寸所拥有的像素（Pixel）数目。因此 PPI 数值越高，即代表显示屏能够以越高的密度显示图像。当然，显示的密度越高，拟真度就越高。</p>
+<p>我们在移动应用中提到 ppi 和 dpi 其实都一样（概念不同，但对设计来讲没有特别需要深入了解），所以我们先忽略掉 dpi。</p>
+<p><strong>1）第一代的 iPhone 屏幕密度：165 ppi；(基本已经淘汰)</strong></p>
+<p><strong>2）iPhone4 开始后的屏幕密度：326 ppi；</strong></p>
+<p><strong>3）iPhone6 plus</strong>** 屏幕密度：401 ppi；**</p>
+<p>iPhone6 plus 缩减像素取样</p>
+<p>在 iOS 上渲染像素和物理像素（Physical pixels）是等同的，只有一个例外：iPhone 6 plus 的 Retina HD 显示屏。由于它屏幕的像素分辨率要低于一个常规的 @3x 分辨率，所以被渲染内容会自动调整为原始尺寸的 87%（从 2208<em>1242 像素来适应为 1920</em>1080 像素的显示屏分辨率）</p>
+<p><img src="http://ww3.sinaimg.cn/large/006tKfTcly1ff9ap9921aj30g90ji405.jpg" alt="img"></p>
+<p><img src="http://ww1.sinaimg.cn/large/006tKfTcly1ff9apa7li5j30gl0evju6.jpg" alt="img"></p>
+<p><strong>3.4.2 iOS 的常见分辨率和显示规格</strong></p>
+<p><img src="http://ww1.sinaimg.cn/large/006tKfTcly1ff9apb09l2j30iv08i3yf.jpg" alt="img"></p>
+<p><strong>3.4.3 界面基本组成元素（建议高度）</strong></p>
+<p>几乎所有的 iOS 应用都应用了 UI Kit framework 中定义的组件。了解这些组件的名字，作用和构成能够帮助你设计应用过程中做出更好的决定。</p>
+<p>界面基本组成元素包括：状态栏（Status Bar）+ 导航栏（NavigationBar）+ 标签栏（Tab Bar）/ 工具栏（Tool Tabs）+ 内容区域；</p>
+<hr>
+<p><img src="http://ww4.sinaimg.cn/large/006tKfTcly1ff9apbigd3j30jd0ac0uw.jpg" alt="img"></p>
+<p>AppStore、Safari 界面预览</p>
+<h4 id="35-图标-icon"><strong>3.5 图标 icon</strong></h4>
+<p>每一个应用程序需要的应用程序图标和启动文件或图像。此外，一些应用程序需要自定义图标来表示应用程序的具体内容，功能或模式的导航栏，工具栏和标签栏。</p>
+<p>图标按照最大的尺寸 1024x1024px 来设计，之后按比例缩小到每个尺寸，进行调整。提交没有高光和阴影的直角图形。(如下图所示)</p>
+<p><img src="http://ww2.sinaimg.cn/large/006tKfTcly1ff9apcht3pj30dj05ajs9.jpg" alt="img"></p>
+<p>设计时，可用栅格系统来帮助设计：</p>
+<p><img src="http://ww2.sinaimg.cn/large/006tKfTcly1ff9apdkmtwj30gi057dip.jpg" alt="img"></p>
+<p>苹果开发了具有黄金分割比例的栅格系统，可用以正确地调整和对齐 icon 上的元素。不过，甚至是苹果设计师的原生 App icon 也没有完全严格地遵守栅格系统。所以如果你的 icon 上的元素在没有严格遵守栅格系统的情况下能更好地展示，那你可以考虑下打破一些固有的规则。</p>
+<p>一个 APP 所需提供以下 6 种图标尺寸：</p>
+<p><img src="http://ww4.sinaimg.cn/large/006tKfTcly1ff9apetwsdj30il09cdfp.jpg" alt="img"></p>
+<h4 id="36-启动页图片尺寸">3.6 启动页图片尺寸</h4>
+<p>如果你需要为这些设备创建静态图像发布，请使用以下尺寸 (个别情况要除去状态栏高度)：</p>
+<p>iPhone4s(@2x):640x960px(640x920px)</p>
+<p>iPhone5s(@2x):640x1136px(640x1096px)</p>
+<p>iPhone6(@2x):750x1334px（750x1294px）</p>
+<p>iPhone6 plus(@3x):1242x2208px（1242x2148px）</p>
+<p>iPhone6 plus 横屏启动：2208x1242px</p>
+<h2 id="四按钮">四．按钮</h2>
+<h4 id="41-图标按钮">4.1 图标按钮</h4>
+<p>iOS 提供了许多与在内置的应用程序所使用的标准工具栏和导航栏按钮。</p>
+<p>所以，设计过程中请尽量不要 “创造” 图标按钮，而多使用 iOS 提供的标准图标按钮或在其基础上进行 “适当” 修改。</p>
+<p>工具栏和导航栏按钮举例：</p>
+<p><img src="http://ww4.sinaimg.cn/large/006tKfTcly1ff9apfo24gj30h809kdfu.jpg" alt="img"></p>
+<p>iOS 的包括一些表视图元素，可以扩展表视图功能。除非另有说明，这些元素都适合，只有表视图中使用。</p>
+<p><img src="http://ww1.sinaimg.cn/large/006tKfTcly1ff9apg80kij30ha09wmx7.jpg" alt="img"></p>
+<p><strong>各种 &quot;栏&quot; 的按钮 icon:</strong></p>
+<p>各种 &quot;栏&quot; 中的按钮 icon 应该有两种状态：默认状态下的 1 或者 1.5pt 笔画宽度的轮廓样式，以及纯色填充的活跃状态。</p>
+<p><img src="http://ww2.sinaimg.cn/large/006tKfTcly1ff9aph6njhj30fo01ft8z.jpg" alt="img"></p>
+<p>不要在按钮 icon 上添加任何额外的效果，比如下拉阴影或者内阴影。按钮 icon 应该在一个透明背景上以一种纯色进行绘制 --icon 的形状作为遮罩，颜色将会以编程形式应用。</p>
+<p>给每个互动的元素充足的空间，从而让用户容易操作这些内容和控件。</p>
+<p>控件最小可点击区域为：88x88 px（这个是针对开发人员）。</p>
+<h4 id="42-按钮状态说明"><strong>4.2 按钮状态说明</strong></h4>
+<p>按钮状态在设计时主要分为普通（normal）、选中（selected）、高亮（highlighted）、不可点（disabled）四种，大部分按钮都包含了这** 4** 种状态。</p>
+<p><img src="http://ww3.sinaimg.cn/large/006tKfTcly1ff9api3elwj30h90aqaa8.jpg" alt="img"></p>
+<h4 id="43-按钮样式要求">4.3 按钮样式要求</h4>
+<p>按钮三种样式：第一种是直角；第二种是圆角（圆角为 8px）；第三种是全圆角。</p>
+<p><img src="http://ww3.sinaimg.cn/large/006tKfTcly1ff9apijobhj309c09l3yl.jpg" alt="img"></p>
+<h4 id="44-设置按钮-开启-关闭样式建议以下样式">4.4 设置按钮 -- 开启、关闭样式，建议以下样式</h4>
+<p><img src="http://ww2.sinaimg.cn/large/006tKfTcly1ff9apjiv8xj308202jglr.jpg" alt="img"></p>
+<p>用户可使用开关在 &quot;on&quot; 和 &quot;off&quot; 两种状态间切换。设计师可自定义两种状态的颜色，但是开关按钮的外观和尺寸是设定好的不能更改。</p>
+<h2 id="五常用设计元素参考系统控件库">五．常用设计元素（参考系统控件库）</h2>
+<p>iOS 提供了很多不错的现成的视图和控件，可帮设计师快速构建页面。设计师可以将一些元素自定义到某个级别，但是也有一些元素不能或者不应该进行自定义。当为 iOS 设计应用程序时，你应该知道一些工具集的使用，只要是可能，就应该坚持下去。但在一些情况下，可能需要设计一些自定义控件，因为你需要一个更加定制化的界面或者想要改变现有控件的功能（有点危险）。几乎任何一件事情都是有可能的，而有时候你需要打破既有的规则，不过需要三思。</p>
+<h4 id="51-状态栏-status-bar">5.1 状态栏 (Status bar)</h4>
+<p>包含了基本的系统信息，比如运营商、时间、电池状态以及其他等，它在视觉上通常与导航栏联系在一起，并且使用相同的背景填充。</p>
+<p><img src="http://ww1.sinaimg.cn/large/006tKfTcly1ff9apjyrzlj30bf03cdg8.jpg" alt="img"></p>
+<h4 id="52-导航栏-navigationbar">5.2 导航栏 (Navigationbar)</h4>
+<p>导航栏包含在 app 多个视图间进行导航的控件，以及在当前视图中管理内容的选项。导航栏通常展示在屏幕的顶部，状态栏的底部。默认情况下，背景是半透明的，在导航栏下方还有模糊的内容。导航栏的背景可以是纯色的，渐变的或者是自定义的位图模式。</p>
+<p><img src="http://ww1.sinaimg.cn/large/006tKfTcly1ff9apkyemqj30f10b4go1.jpg" alt="img"></p>
+<p>横屏模式下的 iPhone 6 导航栏</p>
+<p><img src="http://ww4.sinaimg.cn/large/006tKfTcly1ff9aplf715j30fp01r3yj.jpg" alt="img"></p>
+<p>横屏模式下的 iPhone 4S 导航栏。导航栏的高度减了 24px，除了 iPad。这也是常见的横屏模式下隐藏状态栏的方法。</p>
+<p><strong>元素应当遵循特定的对齐模式：</strong></p>
+<ol>
+<li>
+<p>返回按钮通常居左对齐。</p>
+</li>
+<li>
+<p>当前视图的标题应当居中展示在 bar 中。</p>
+</li>
+</ol>
+<p>3)Action 按钮通常居右对齐。如果可能的话 Action 按钮应当限制在一个主要操作行文，以避免错误点击，并维持其简洁性。</p>
+<h4 id="53-标签栏-tab-bar-系统定制">5.3 标签栏 (Tab bar) (系统定制)</h4>
+<p>用户可使用标签栏在 APP 的单个视图间快速导航，并且标签栏也只能用于这个目的。标签栏通常出现在屏幕的底部。默认情况下，标签栏是略透明的，并且向导航栏一样使用系统的模糊效果。</p>
+<p><img src="http://ww1.sinaimg.cn/large/006tKfTcly1ff9apme5gzj30e003gt9c.jpg" alt="img"></p>
+<p>1）标签栏包含固定的最大数量的 tabs，一旦标签数量超过其可容纳的最大数量，后边的标签将会展示在隐藏的 &quot;more-tab&quot; 列表中，并且有一个选项可重排标签顺序。</p>
+<p>2）虽然 iPhone 上最多可展示** 5** 个标签，但是在 iPad 上最多可展示** 7** 个标签。</p>
+<h4 id="54-工具栏-tool-bar">5.4 工具栏 (Tool bar)</h4>
+<p>工具栏包含用于管理或者操作当前视图中内容的一些操作。在 iPhone 上，它通常出现在屏幕的底部，但在 iPad 上也能出现在屏幕的顶部。</p>
+<p>和导航栏类似，工具栏的背景填充也能调整，默认情况下工具栏本身是半透明的，在其下方还有模糊的视图内容。</p>
+<p><img src="http://ww1.sinaimg.cn/large/006tKfTcly1ff9apna2a1j30ec02jt8z.jpg" alt="img"></p>
+<p>当一个特定视图要求三个以上主要活动，但放在导航栏上又显得凌乱时，建议可以使用工具栏（作参考）。</p>
+<h4 id="55-搜索栏-search-bar">5.5 搜索栏 (Search bar)</h4>
+<p>搜索栏默认有两种风格：突出的和最小化的。两种类型的搜索栏在功能上是一样的。</p>
+<p>\1. 只要用户没有输入文本，搜索栏中会展示占位符文本。</p>
+<p>\2. 键入搜索项目后，占位符消失，一个清晰的删除按钮会出现在搜索栏的右侧。</p>
+<p>搜索栏可以利用一个提示 -- 一个短句来介绍搜索的上下文环境。比如 &quot;键入某个城市、邮政编码或者机场&quot;</p>
+<p>不使用提示和使用提示两种风格</p>
+<p>最小化搜索栏类型</p>
+<p>想要提供对检索词条的更多控制，可用 Scope bar（范围栏）限制搜索栏，Scope bar 会使用和搜索栏一样的风格，当搜索结果有清晰的定义类别时，这种方法比较有用。</p>
+<h4 id="56-分段控制-segmented-control">5.6 分段控制 (Segmented control）</h4>
+<p>分段控制以放置更多的标签，可以通过在视图中左右滑动，切换不同的界面。可帮助用户定义搜索的范围。分段控制的数量最好控制在** 4** 个以内，必须要用竖线分割，超出** 4** 个，不建议使用这个样式。（如下图所示）</p>
+<p><img src="http://ww1.sinaimg.cn/large/006tKfTcly1ff9apo80uaj30ef049dgh.jpg" alt="img"></p>
+<p>每个分段可包含一个文本标签或者一个图片（icon），但不能同时包含两者。另外，不建议在一个分段控件中混合使用不同的分段风格，比如文本和图片。每个分段的宽度会基于分段的数量自动调整（2 个分段各占 50%，4 个分段各占 25%）。</p>
+<h4 id="57-表视图table-view">5.7 表视图（Table view）</h4>
+<p>表视图以单列或者多列形式展示少数或者多个列表风格的信息，并有能将内容分组的选项。根据你展示的数据类型，通常可使用两种基本的表视图风格：</p>
+<p><strong>无格式的：</strong></p>
+<p><img src="http://ww4.sinaimg.cn/large/006tKfTcly1ff9app5xfpj30dc08p3z7.jpg" alt="img"></p>
+<p><strong>分组样式：</strong></p>
+<p><img src="http://ww2.sinaimg.cn/large/006tKfTcly1ff9appyvuej30c605imxa.jpg" alt="img"></p>
+<p>分组表视图允许用户对内容进行分组。每个分组可以有页眉（最佳用法是描述类组的上下文环境）和页脚（适用于帮助文本等）。一个分组的表视图至少需要包含一个类组，并且每个类组至少要包含一行内容。</p>
+<p>对于以上两种表视图类型，可用几种风格来展示数据，以方便用户快速扫描、阅读和适当调整内容。</p>
+<p><strong>默认：</strong></p>
+<p><img src="http://ww4.sinaimg.cn/large/006tKfTcly1ff9apqk0dgj30d306pt9g.jpg" alt="img"></p>
+<p>默认的表视图有一个居左对齐的可选图片和标题。</p>
+<p><strong>带有副标题:</strong></p>
+<p><img src="http://ww1.sinaimg.cn/large/006tKfTcly1ff9apr0c0ij30c404b0sy.jpg" alt="img"></p>
+<hr>
+<p>在每行标题下展示小字号的副标题，适用于进一步的解释说明或者简短描述。</p>
+<p><strong>带有数值:</strong></p>
+<p><img src="http://ww2.sinaimg.cn/large/006tKfTcly1ff9aprxb3fj30bw05at8z.jpg" alt="img"></p>
+<hr>
+<p>带数值表类型可展示与行标题相关的特定数值。类似默认的类型，每行都有一个居左对齐的图片和标题。在该类型中，数值居右对齐，通常使用比标题淡一点的文本颜色。</p>
+<h4 id="58-活动视图activity-view">5.8 活动视图（Activity view）</h4>
+<p>活动视图用以展示特定的任务。这些任务可以是系统默认的任务，比如通过可用选项分享内容，或者是完全自定义的活动。当为自定义任务按钮设计 icon 时，你应当遵从活跃状态和栏按钮 icon 的一些设计指南 -- 纯色填充、无任何效果、以及在一个透明背景上。</p>
+<p><img src="http://ww2.sinaimg.cn/large/006tKfTcly1ff9apsd8irj309m09imyj.jpg" alt="img"></p>
+<hr>
+<p>**活动：**活动页面用来执行可用操作列表中的单项操作，并且强迫用户确认或者取消某个活动。</p>
+<p><img src="http://ww2.sinaimg.cn/large/006tKfTcly1ff9apte28kj30bm070754.jpg" alt="img"></p>
+<p>在竖屏模式下（以及尺寸比较小的横屏模式下），活动以按钮列表形式滑入，并呆在屏幕的底部。这种情况下，活动列表应该有一个取消按钮来关闭视图和执行任何列表中的 Action。</p>
+<h4 id="59-提醒视图-alert-view">5.9 提醒视图 (Alert view)</h4>
+<p>提醒视图的目的是用来通知用户一些关键性的信息，并有选择地迫使用户做出选择。</p>
+<p>提醒视图通常包含一个标题文本（最好不要超过一行）、一个（纯信息提醒，比如 &quot;好&quot;）或者两个按钮（要求用户做出决定，比如 &quot;取消&quot; 或 &quot;好&quot;）。</p>
+<p><img src="http://ww3.sinaimg.cn/large/006tKfTcly1ff9apw7u25j30bc0h0n0l.jpg" alt="img"></p>
+<h4 id="510-编辑菜单edit-menu">5.10 编辑菜单（Edit menu）</h4>
+<p>用户可使用编辑菜单执行复制、粘贴以及剪切等操作。虽然你能控制用户可以选择哪个操作，但是编辑菜单的视觉外观是设定好的，不能重新配置，除非你设计一个完全自定义的编辑菜单。</p>
+<p><img src="http://ww2.sinaimg.cn/large/006tKfTcly1ff9apxhkmwj30ax02kdfv.jpg" alt="img"></p>
+<h4 id="511-弹出视图popovers">5.11 弹出视图（Popovers）</h4>
+<p>当某项特定操作要求多个用户输入才能继续进行时弹出视图就非常有用了。在水平方向上，弹出视图可通过箭头指向展示下方相关的控件（比如按钮）。弹出控件的背景透明度稍有降低，可展示其下方的模糊内容，像 iOS 7 以后其他很多 UI 元素一样。</p>
+<p><img src="http://ww3.sinaimg.cn/large/006tKfTcly1ff9apy22lhj30bh09x0tc.jpg" alt="img"></p>
+<p>弹出视图是一种非常强大的临时视图，可包含类似导航栏、表视图、地图或者 web 视图等对象。随着弹出视图所包含内容和元素的增加，其窗口也能滚动展示。</p>
+<h4 id="512-选择器pickers">5.12 选择器（Pickers）</h4>
+<p>选择器用来在一个可用值列表中选择某个值，和 web 上的下拉选框功能类似。选择器的扩展版本是日期选择器，允许用户滚动日期和时间列表来选择一个月、日以及具体时间。</p>
+<p><img src="http://ww4.sinaimg.cn/large/006tKfTcly1ff9apyj3ddj30b005hweh.jpg" alt="img"></p>
+<p>除了背景色外，不可能更改其视觉风格或者尺寸。很多时候，选择器位于屏幕的底部，像键盘一样展示，但不能用在其他地方。</p>
+<h4 id="513-滑杆sliders">5.13 滑杆（Sliders）</h4>
+<p>滑杆控件允许用户从允许值范围中选择一个特定的值。由于使用滑杆选择一个值的操作非常流畅，并且无需额外的步骤，所以建议在选择预估值的时候使用滑杆，而不是选择精确的值。比如滑杆可以很好地用来设置音量，用户可以听到和看到音量大小的不同，而通过输入文本来设置精确的 DB 值是不切实际的。</p>
+<p><img src="http://ww2.sinaimg.cn/large/006tKfTcly1ff9apyx3l4j30dg02mwee.jpg" alt="img"></p>
+<h2 id="六文件命名格式规范">六．文件命名格式规范</h2>
+<h4 id="61-文件夹">6.1 文件夹</h4>
+<p>同一功能下的切图放在一个文件夹下，文件夹用中文命名，名称由对应的功能模块确认。</p>
+<p>例：设置功能所有的切图放在 “设置” 文件夹下。</p>
+<p><img src="http://ww4.sinaimg.cn/large/006tKfTcly1ff9apzt5byj30cw03p0t1.jpg" alt="img"></p>
+<h4 id="62-文件切片命名规则">6.2 文件切片命名规则</h4>
+<p>设计的时候，我们以 iPhone 6（750px/375pt）的尺寸作为基准设计，切图的时候我们通常需要切两套图。</p>
+<p>1）格式：普通：image.png；两倍图: image@2x.png；三倍图：image@3x.png。</p>
+<p>2）保存：png-24, 保留透明度。</p>
+<p>3）尺寸：像素（避免出现小数，如 @2x 的图标为 88x88，@3x 的图标为 132x132）；</p>
+<p>4）命名：iPhone6 及以下：模块_功能_控件_状态 @2x.png</p>
+<p>​               iPhone6plus: 模块_功能_控件_状态 @3x.png</p>
+<p>​               需要用英文表示。</p>
+<p><strong>举个例子：</strong></p>
+<p><img src="http://ww4.sinaimg.cn/large/006tKfTcly1ff9aq1rnclj30dj03pa9u.jpg" alt="img"></p>
+<p><strong>文件命名实例与对应图示：</strong></p>
+<p><img src="http://ww2.sinaimg.cn/large/006tKfTcly1ff9aq42okhj30i30a93yo.jpg" alt="img"></p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://zhangzhuqian.github.io//tag/jie-mian-gui-fan" class="tag">
+                    界面规范
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zhangzhuqian.github.io//post/iOS 和 Android 的 app 界面设计规范">
+                  <h3 class="post-title">
+                    iOS 和 Android 的 app 界面设计规范
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>

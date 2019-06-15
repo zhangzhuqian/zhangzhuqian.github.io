@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>爬虫学习记录 | Seafun</title>
+<meta name="description" content="Seafun的 自言自语">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zhangzhuqian.github.io//favicon.ico?v=1560599787100">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://zhangzhuqian.github.io//styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zhangzhuqian.github.io/">
+        <img src="https://zhangzhuqian.github.io//images/avatar.png?v=1560599787100" class="site-logo">
+        <h1 class="site-title">Seafun</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      Seafun的 自言自语
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zhangzhuqian.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">爬虫学习记录</h2>
+            <div class="post-date">2017-04-29</div>
+            
+            <div class="post-content">
+              <p>爬虫学习记录</p>
+<!-- more --> 
+<h2 id="excel抓取数据">excel抓取数据</h2>
+<p>目标：获取网站上的图表数据</p>
+<p>手段：利用excel中的数据-自网站功能</p>
+<p>限制：受限较多，可抓取的图表数据不多</p>
+<h2 id="web-scraper-爬虫">Web Scraper-爬虫</h2>
+<h3 id="工具chrome浏览器web-scraper插件">工具：Chrome浏览器+Web Scraper插件</h3>
+<h3 id="使用方法">使用方法：</h3>
+<h4 id="基础版本">基础版本</h4>
+<p><img src="http://ww1.sinaimg.cn/large/006tNbRwly1ff9r9pltklj31kw0t4jyn.jpg" alt=""></p>
+<p><img src="http://ww4.sinaimg.cn/large/006tNbRwly1ff9rgovii9j31kw0t4gvl.jpg" alt=""></p>
+<p><img src="http://ww4.sinaimg.cn/large/006tNbRwly1ff9rio0bctj31kw0putdg.jpg" alt=""></p>
+<p>多页爬取注意关注网页链接</p>
+<h4 id="进阶">进阶</h4>
+<p><img src="http://ww2.sinaimg.cn/large/006tNbRwly1ff9ryndkexj30ic0ayt9h.jpg" alt=""></p>
+<p><img src="http://ww3.sinaimg.cn/large/006tNc79ly1ff9s1dd1fij313o0k6adc.jpg" alt=""></p>
+<p><img src="http://ww3.sinaimg.cn/large/006tNc79ly1ff9s0h9fhlj313a0jyack.jpg" alt=""></p>
+<p>注意:</p>
+<ol>
+<li>需要点击才能获取元素的采用element click,其中element为需要获取的元素的更大集合</li>
+</ol>
+<h2 id="反爬虫">反爬虫</h2>
+<h4 id="常见手段">常见手段:</h4>
+<ol>
+<li>文件头user-agent检查</li>
+<li>动态加载(AJAX,Javascript等)</li>
+<li>用户行为(cookies+请求时间间隔)</li>
+<li>人机交互验证</li>
+</ol>
+<h4 id="应对方法">应对方法:</h4>
+<p>web scraper能够解决大部分的检测,其他方式</p>
+<ol>
+<li>怂:请求间隔和延迟分别设置长一点</li>
+<li>键鼠操作</li>
+</ol>
+<h4 id="奇葩方法">奇葩方法:</h4>
+<ol>
+<li>雪碧图:利用移动端解决</li>
+<li>元素位移:手机端,查找ttf,下载ttf解决</li>
+<li>结果解析为图片</li>
+</ol>
+<h4 id="web-scraper常见疑问局限点和突破方法">web scraper常见疑问,局限点和突破方法</h4>
+<ol>
+<li>无法收到过程数据: 可随时查看,通过browse</li>
+<li>速度较慢:设置分页</li>
+<li>缺失了部分采集数据: 自建网站集</li>
+<li>模态窗口的下拉滚动: 鼠标,采用较长延迟,自行鼠标点击</li>
+<li>抓取结果无序排列: 获取当前分页的页面id或使用couchDB</li>
+<li>Flash:下载swf分析</li>
+</ol>
+<h4 id="高阶使用技巧">高阶使用技巧</h4>
+<ol>
+<li>xml或数据接口</li>
+<li>移动站:在打开的窗口中选择network emulator</li>
+<li>多开:只要不是一个站点地图sitemap即可</li>
+<li>自建网站路径:everything建站,hosts替换,用excel转word制作站点集,解决多站点</li>
+<li>IP池:shadowsocks进行负载均衡</li>
+<li>Element Click元素+delay实现自动点击页面上的元素</li>
+<li>鼠标点击或鼠标操作</li>
+<li>结合power query(couchDBde API)</li>
+</ol>
+<h4 id="拓展阅读">拓展阅读</h4>
+<ol>
+<li>Everything 建站，让本地文件可以通过 127.0.0.1 的方式访问</li>
+<li>Excel 超链接公式，第一列为待采集网址，第二列为超链接公式生成的网址，复制第二列到 word 里并另存为 html 文件</li>
+<li>改 host，让某个域名指向本地的 html 文件</li>
+</ol>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://zhangzhuqian.github.io//tag/pa-chong" class="tag">
+                    爬虫
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zhangzhuqian.github.io//post/产品小报-从微信苹果大战说开去">
+                  <h3 class="post-title">
+                    产品小报-从微信苹果大战说开去
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>产品小报-从微信苹果大战说开去 | Seafun</title>
+<meta name="description" content="Seafun的 自言自语">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zhangzhuqian.github.io//favicon.ico?v=1560599787100">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://zhangzhuqian.github.io//styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zhangzhuqian.github.io/">
+        <img src="https://zhangzhuqian.github.io//images/avatar.png?v=1560599787100" class="site-logo">
+        <h1 class="site-title">Seafun</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      Seafun的 自言自语
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zhangzhuqian.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">产品小报-从微信苹果大战说开去</h2>
+            <div class="post-date">2017-04-29</div>
+            
+            <div class="post-content">
+              <p>Author：胡不归</p>
+<!-- more --> 
+<p>缘由：微信下线赞赏功能，与苹果就虚拟物品的分成比例有关</p>
+<p>关注点：苹果的虚拟物品定义，分成比例，机制说明，引入机制，与之相关的项目（知乎，今日头条，得到等）</p>
+<ol>
+<li>
+<p>付款机制</p>
+</li>
+<li>
+<p>什么样的产品需要接入苹果支付(not apple pay)</p>
+</li>
+<li>
+<p>虚拟产品</p>
+</li>
+<li>
+<p>实物产品不需要</p>
+</li>
+<li>
+<p>退款机制</p>
+</li>
+<li>
+<p>苹果方退款</p>
+</li>
+<li>
+<p>app方退款</p>
+</li>
+</ol>
+<h1 id="回顾时间线">回顾时间线:</h1>
+<ul>
+<li>2017.04.19 17:28 微信宣布暂停iOS端赞赏功能,并提供赞赏二维码给公众号作者,方便读者支持作者</li>
+<li>2017.04.20 00:05 微信宣布暂停iOS端微信公众平台文章个人转账功能</li>
+<li>知乎Live,今日头条等APP陆续将原有的iOS端微信/支付宝支付更换为苹果支付</li>
+</ul>
+<h1 id="了解iap机制">了解IAP机制:</h1>
+<p>IAP即应用内购买(In-App Purchase),</p>
+<h3 id="参考">参考</h3>
+<p>根据苹果更新 3.1.1 条款之后对 App 内的购买付款机制要求，iOS 平台内一直都有规定 App 内的虚拟支付必须要走苹果内部的 IAP 机制，而不能直接用微信或者捆绑的银行卡来付款。苹果强硬要求微信里面购买的内容要走苹果的 IAP，最根本目的就是为了从这些打赏和购买行为当中提取分成。按照惯例，苹果会从整个 iOS App 营收当中抽成 30% 作为公司的利润。</p>
+<p>IAP 的全称是 In-App Purchase，应用内付费。这种业务模式允许用户免费下载试用，对应用内提供的商品选择消费，比如购买游戏道具，购买游戏等级等等。相比完全收费的应 用而言，应用内付费给用户试用的机会，不会让优秀的应用因为缺乏用户的认知而丧失消费者；而且对于开发商，也不需要为了让用户试用而单独发布一款免费的精 简版本。</p>
+<h3 id="商品与交易">商品与交易</h3>
+<p>苹果官方的关于 IAP 的帮助文档是只对注册开发者开放的，所以我不方便把它转载在这里，但我可以对 IAP 里的关键因素做一个通俗易懂的介绍。</p>
+<p>IAP 里有两个关键的词，商品 (Product) 和交易 (Transaction)。
+商品可以是一种虚拟的道具，一个隐藏的关卡或者地图，但必须是直观的，可以让用户购买后直接获益的产品。IAP 的商品从消费性质上分为四种：</p>
+<ol>
+<li><strong>消耗型商品</strong>, 比如游戏道具，子弹，药品等等。由于这类商品可以被消耗，所以支持重复购买。苹果应用商店不保存此类商品的购买记录，如果要保存则需要开发者同步到自己的服务器上。</li>
+<li><strong>非消耗型商品</strong>，比如游戏关卡，隐藏地图等等。这类商品只要购买一次便可以了，苹果应用商店里每一个用户对非消耗型商品的购买都有记录，可以在不同的设备上恢复购买状态，这个恢复的过程叫做 Restore。</li>
+<li><strong>自动重置型订阅</strong>，比如电子杂志，读物等。消费者购买这类商品时会从列表中选择一个有效期限，卖家在定义商品的时候从一群固定的选项中选择添加一个有效期，比如 7 天，一个月，两个月。过了有效期之后，商品的购买状态会被自动重置成未购买，要想继续获得内容则需要再次订阅。这种类型的商品和非消耗型商品一样，会在苹果商店内保存购买记录。</li>
+<li><strong>非自动重置型订阅</strong>，比如用户订阅电子杂志和读物报刊时需要从自定义的期限列表中选择期限，而不是苹果提供的固定选项，比如 9 天，一个半月或任意时间。在这种情况下，苹果商店无法根据期限来控制订阅的到期行为，所以一切都需要开发商自己编写相应的逻辑来实现。</li>
+</ol>
+<p>交易是指用户对一个商品的购买行为，当用户点击购买一件商品时，一个新的付费行为就被添加到付费队列中，付费队列是一条系统线程，即使应用程序终止仍然会继续执行。</p>
+<h3 id="点">点:</h3>
+<p>得到等在app内支持苹果支付,与此同时,其在微信公众号上也开通了支付渠道,小报君一般选择的就是直接在微信公众平台上进行支付</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://zhangzhuqian.github.io//tag/zhi-fu" class="tag">
+                    支付
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zhangzhuqian.github.io//post/产品小报-五一出游">
+                  <h3 class="post-title">
+                    产品小报-五一出游
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
