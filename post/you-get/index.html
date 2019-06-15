@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>搭建独立博客 | Seafun</title>
+<title>下载全网视频，我只用这个 | Seafun</title>
 <meta name="description" content="Seafun的 自言自语">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -92,59 +92,53 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">搭建独立博客</h2>
-            <div class="post-date">2017-02-10</div>
+            <h2 class="post-title">下载全网视频，我只用这个</h2>
+            <div class="post-date">2017-09-28</div>
             
             <div class="post-content">
-              <h1 id="搭建独立博客">搭建独立博客</h1>
+              <!-- more --> 
+<p>You-Get是一个基于 Python 3 的下载工具。使用 You-Get 可以很轻松的下载到网络上的视频、图片及音乐。使用方法快捷有效到只需要一步，并且速度喜人。目前是我的下载视频的主力方式，推荐给大家。</p>
+<h2 id="安装方法">安装方法</h2>
+<p>you-get 安装可以使用 Python3的 pip3方法，必须提前安装Python3</p>
+<pre><code>$ pip3 install you-get
+</code></pre>
+<p>也可以使用包安装程序 brew，brew 会自动帮你搜索安装程序的依赖包并进行安装，brew 安装方法可直接谷歌，一行程序就可以安装完成，建议使用该方法</p>
+<pre><code>$ brew install you-get
+</code></pre>
+<h2 id="使用方法">使用方法</h2>
+<p>比如想要下载白夜追凶第一集，只需要在网站上找到对应的剧集的url：</p>
+<p>http://v.youku.com/v_show/id_XMjk4ODAyMzIyOA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5~A</p>
+<p>在命令行程序中输入</p>
+<pre><code>$ you-get http://v.youku.com/v_show/id_XMjk4ODAyMzIyOA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5~A
+</code></pre>
+<p>看到以下信息，就开始下载了，注意，可能需要稍作等待</p>
+<pre><code>stream:
+- format:        hd3
+  container:     flv
+  video-profile: 1080P
+  size:          482.3 MiB (505694307 bytes)
+  m3u8_url:      http://pl-ali.youku.com/playlist/m3u8?vid=XMjk4ODAyMzIyOA%3D%3D&amp;type=hd3&amp;ups_client_netip=203.152.92.15&amp;ups_ts=1506569922&amp;utid=vlxTEqEB908CAXwXhQ%2F6znVD&amp;ccode=0401&amp;psid=ce29f159cea39e4ef0c3f5aef89a6e43&amp;duration=2778&amp;expire=18000&amp;ups_key=db4c11467207219a57efdf9d66036e3c
+# download-with: you-get --format=hd3 [URL]
+audio-languages:
+- lang:          国语
+  download-url:  http://v.youku.com/v_show/id_XMjk4ODAyMzIyOA==
+  Downloading 白夜追凶 01.flv ...
+ 1.2% (  6.0/482.3MB) ├█──────────────────────────────────────┤[ 1/21]  574 kB/s
+</code></pre>
+<h3 id="下载注意">下载注意</h3>
 <ol>
-<li>
-<p>利用hexo搭建</p>
-<ol>
-<li>
-<p>根目录下</p>
-<p>npm install -g hexo-cli</p>
-</li>
-<li>
-<p>新建blog文件夹</p>
-<ol>
-<li>hexo init</li>
-<li>npm install</li>
+<li>下载时会全速下载</li>
+<li>you-get 下载会将剧集切分成多部分来下载，在各个部分下载完成之后会进行</li>
 </ol>
-</li>
-<li>
-<p>修改配置文件</p>
-</li>
-<li>
-<p>source下新建CNAME文件,文件内输入你的域名</p>
-</li>
-</ol>
-</li>
-<li>
-<p>使用github pages</p>
-<ol>
-<li>新建仓库,略</li>
-<li>hexo的配置文件中在deploy中填写git以及仓库地址</li>
-<li>在域名服务商处填写 域名记录:https://help.github.com/articles/using-a-custom-domain-with-github-pages/</li>
-</ol>
-</li>
-<li>
-<p>blog部署到git上访问域名</p>
-</li>
-</ol>
-<h3 id="hexo使用方法">hexo使用方法</h3>
-<p>https://hexo.io/zh-cn/docs/index.html</p>
+<h2 id="支持的网站">支持的网站</h2>
+<p>国内大部分视频网站都支持，比如：优酷，腾讯视频，爱奇艺，芒果TV，哔哩哔哩，乐视等这些主流网站</p>
 
             </div>
             
               <div class="tag-container">
                 
-                  <a href="https://zhangzhuqian.github.io//tag/hexo" class="tag">
-                    Hexo
-                  </a>
-                
-                  <a href="https://zhangzhuqian.github.io//tag/blog" class="tag">
-                    Blog
+                  <a href="https://zhangzhuqian.github.io//tag/ruan-jian" class="tag">
+                    软件
                   </a>
                 
               </div>
@@ -152,9 +146,9 @@
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://zhangzhuqian.github.io//post/解决Sketch字体问题">
+                <a href="https://zhangzhuqian.github.io//post/公众号运营策略">
                   <h3 class="post-title">
-                    解决Sketch字体问题
+                    公众号运营策略
                   </h3>
                 </a>
               </div>
