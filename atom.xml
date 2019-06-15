@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>/Users/Seafun/Google/Gridea/output</id>
+    <id>https://zhangzhuqian.github.io/</id>
     <title>Seafun</title>
-    <updated>2019-06-15T11:23:55.424Z</updated>
+    <updated>2019-06-15T11:41:15.810Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="/Users/Seafun/Google/Gridea/output"/>
-    <link rel="self" href="/Users/Seafun/Google/Gridea/output/atom.xml"/>
+    <link rel="alternate" href="https://zhangzhuqian.github.io/"/>
+    <link rel="self" href="https://zhangzhuqian.github.io//atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>/Users/Seafun/Google/Gridea/output/images/avatar.png</logo>
-    <icon>/Users/Seafun/Google/Gridea/output/favicon.ico</icon>
+    <logo>https://zhangzhuqian.github.io//images/avatar.png</logo>
+    <icon>https://zhangzhuqian.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Seafun</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>/Users/Seafun/Google/Gridea/output/post/hello-gridea/index.html</id>
-        <link href="/Users/Seafun/Google/Gridea/output/post/hello-gridea/index.html">
+        <id>https://zhangzhuqian.github.io//post/hello-gridea</id>
+        <link href="https://zhangzhuqian.github.io//post/hello-gridea">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
